@@ -15,7 +15,7 @@ local _4_
 do
   local tbl_21_auto = {}
   local i_22_auto = 0
-  for _, val in ipairs({"git.diffview", "git.neogit", "motion.leap"}) do
+  for _, val in ipairs({"git.diffview", "motion.leap"}) do
     local val_23_auto = {import = ("nvcommunity." .. val)}
     if (nil ~= val_23_auto) then
       i_22_auto = (i_22_auto + 1)

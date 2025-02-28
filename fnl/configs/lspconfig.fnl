@@ -4,6 +4,7 @@
 (local servers [:html :gopls :rust_analyzer])
 
 (lspconfig.gopls.setup {:settings {:gopls {:gofumpt true}}})
+(lspconfig.csharp_ls.setup {})
 
 ;; setup linting for fennel
 ;; derived from https://github.com/Olical/dotfiles/blob/b72363f77586ad08ba1581c33ee476b1f02e999f/stowed/.config/nvim/lua/user/plugins/mason.fnl

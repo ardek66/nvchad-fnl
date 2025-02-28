@@ -30,7 +30,7 @@
  ; community plugin repo
  {1 :NvChad/nvcommunity}
  ; install plugin from said repo
-(icollect [_ val (ipairs [:git.diffview :git.neogit :motion.leap])]
+(icollect [_ val (ipairs [:git.diffview :motion.leap])]
   {:import (.. "nvcommunity." val)})
 
  ; infer parentheses, uncomment to use

@@ -3,4 +3,5 @@ local function _1_()
   local fidget = require("fidget")
   return fidget.setup({notification = {override_vim_notify = true}})
 end
-return {"j-hui/fidget.nvim", config = _1_, lazy = false}
+do local _ = {"j-hui/fidget.nvim", config = _1_, lazy = false} end
+return {"folke/snacks.nvim", priority = 1000, opts = {quickfile = {enabled = true}, gitbrowse = {enabled = true}, bufdelete = {enabled = true}, input = {enabled = true}, picker = {enabled = true}}, lazy = false}
