@@ -30,8 +30,7 @@ local function _6_()
   return paredit.setup()
 end
 local function _7_()
-  local surround = require("nvim-surround")
-  local config = {}
-  return surround.setup(config)
+  local paredit_fnl = require("nvim-paredit-fennel")
+  return paredit_fnl.setup()
 end
-return {{"stevearc/conform.nvim", config = _1_, lazy = false}, {"neovim/nvim-lspconfig", config = _2_}, {"williamboman/mason.nvim", opts = {ensure_installed = {"lua-language-server", "stylua", "html-lsp", "fennel-language-server"}}}, {"nvim-treesitter/nvim-treesitter", opts = {ensure_installed = {"vim", "lua", "vimdoc", "fennel"}}}, {"hrsh7th/nvim-cmp", config = _3_}, {"NvChad/nvcommunity"}, _4_, {"julienvincent/nvim-paredit", ft = {"fennel"}, config = _6_}, {"kylechui/nvim-surround", event = "VeryLazy", config = _7_}, {"PaterJason/cmp-conjure", ft = {"fennel"}, dependencies = {"Olical/conjure", ft = {"fennel"}}}}
+return {{"stevearc/conform.nvim", config = _1_, lazy = false}, {"neovim/nvim-lspconfig", config = _2_}, {"williamboman/mason.nvim", opts = {ensure_installed = {"lua-language-server", "stylua", "html-lsp", "fennel-language-server"}}}, {"nvim-treesitter/nvim-treesitter", opts = {ensure_installed = {"vim", "lua", "vimdoc", "fennel"}}}, {"hrsh7th/nvim-cmp", config = _3_}, {"NvChad/nvcommunity"}, _4_, {"julienvincent/nvim-paredit", ft = {"fennel"}, config = _6_}, {"julienvincent/nvim-paredit-fennel", dependencies = {"julienvincent/nvim-paredit"}, ft = {"fennel"}, config = _7_}, {"PaterJason/cmp-conjure", ft = {"fennel"}, dependencies = {"Olical/conjure", ft = {"fennel"}}}}

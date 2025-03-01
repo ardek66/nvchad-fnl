@@ -50,21 +50,21 @@
            (let [paredit (require :nvim-paredit)]
              (paredit.setup)))}
 
-; {1 :julienvincent/nvim-paredit-fennel
-;  :dependencies [:julienvincent/nvim-paredit]
-;  :ft [:fennel]
-;  :config (fn []
-;            (let [paredit-fnl (require :nvim-paredit-fennel)]
-;              (paredit-fnl.setup)))}
+ {1 :julienvincent/nvim-paredit-fennel
+  :dependencies [:julienvincent/nvim-paredit]
+  :ft [:fennel]
+  :config (fn []
+            (let [paredit-fnl (require :nvim-paredit-fennel)]
+              (paredit-fnl.setup)))}
 
  ; surround text with ()
- {1 :kylechui/nvim-surround
-    :event :VeryLazy
-    :config 
-    (fn []
-      (let [surround (require :nvim-surround)
-            config {}]
-        (surround.setup config)))}
+; {1 :kylechui/nvim-surround
+;    :event :VeryLazy
+;    :config 
+;    (fn []
+;      (let [surround (require :nvim-surround)
+;            config {}]
+;        (surround.setup config)))}
               
 
  ; plug neovim with a repl
